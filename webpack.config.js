@@ -6,15 +6,14 @@ module.exports = {
 		filename: 'main.js',
 		path: path.resolve(__dirname)
 	},
+	watch: true,
 	devServer: {
 		before: function(app, server) {
 			server._watch(["./**/*.html"])
 		},
+		port: 3000,
 		contentBase: path.join(__dirname),
 		hot: true,
-		public: "http://localhost:3000",
-		publicPath: "http://localhost:3000/",
-		disableHostCheck: true,
 		headers: {
 			"Access-Control-Allow-Origin": "*"
 		}

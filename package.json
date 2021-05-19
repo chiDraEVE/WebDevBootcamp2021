@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --watch --mode=development",
     "build": "webpack",
     "test": "echo \\\"Error: no beginner specified\\\" && exit 1"
   },
