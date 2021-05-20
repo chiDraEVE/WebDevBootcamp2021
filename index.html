@@ -4,10 +4,37 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>The Webdeveloper Bootcamp 2021</title>
+	<title>Webdeveloper Bootcamp 2021</title>
+	<style>
+		h2 {
+				text-align: center;
+		}
+		.webdev__cards {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+		}
+
+		.webdev__card {
+				justify-items: center;
+				align-items: center;
+		}
+
+    .webdev__card h3{
+		    text-align: center;
+    }
+
+	</style>
 </head>
 <body>
-Test123
+<h2>The Web Developer Bootcamp</h2>
+<div class="webdev__cards">
+	<div class="webdev__card">
+		<h3><a href="beginner">Beginner</a></h3>
+	</div>
+	<div class="webdev__card">
+		<h3><a href="Advanced">Advanced</a></h3>
+	</div>
+</div>
 <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Random Cat Exercise</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+    <style>
+        img { max-width: 480px}
+    </style>
+</head>
+<body>
+<h1>Random Cat Photos</h1>
+<button id="btn">Random Cat</button>
+<img id="catImg" src="https://purr.objects-us-east-1.dream.io/i/20180130_165341-1.jpg">
+<script>
+    var url = "http://aws.random.cat/meow";
+
+    $("#btn").click(function () {
+        $.getJSON(url)
+            .done(function (data) {
+                $("#catImg").attr("src", data.file);
+            })
+            .fail(function () {
+            alert("Request ist not pawsibble");
+        })
+    })
+</script>
+</body>
+</html>
