@@ -1,0 +1,25 @@
+:root {
+    --primary-font-color: #eaeaea;
+    --secondary-font-color: #cc0a00;
+    --tertiary-font-color: #267ee2;
+
+    --main-background-color: #070707;
+    --secondary-background-color: #001224;
+}
+
+body {
+    color: var(--primary-font-color);
+    background-color: var(--main-background-color);
+}
+
+h2 {
+    color: var(--secondary-font-color);
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--secondary-background-color);
+    text-decoration: underline;
+}
+
+a, a:visited {
+    color: var(--tertiary-font-color);
+}
