@@ -13,8 +13,8 @@ div {
 h1 {
     background-color: pink;
     width: 200px;
-/*    padding-left: 100px;*/
-/*    padding-top: 50px;*/
+    padding-left: 100px;
+    padding-top: 50px;
 /*    margin: 0;*/
 }
 
@@ -34,7 +34,7 @@ h1 {
     border-width: 3px;
     border-style: dashed;
     border-left-width: 8px;
-/*    padding-right: 50px;*/
+    padding-right: 50px;
 /*    margin: 200px;*/
 }
 
@@ -46,6 +46,6 @@ h1 {
 }
 
 
-/*button {*/
-/*    padding: 10px 20px 30px 40px;*/
-/*}*/
+button {
+    padding: 10px 20px 30px 40px;
+}
