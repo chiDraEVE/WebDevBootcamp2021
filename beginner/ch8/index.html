@@ -62,6 +62,13 @@
 	</li>
 	<li>
 		<h4>CSS Units: rems</h4>
+		<p>There's a problem with em, if you use it in nested elements. So in most cases it's better to use rems, who
+			are relative to the root font-size. You should use percentages for root font-size. Therefore you don't
+			overwrite the user's defaults. You can set it to 62.5%, which leads to font-size of 10px, in most browsers.
+			It's easier to calculate with 10px then the default of 16px.
+			<br>
+			<a href="https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97">Found this article</a>
+		</p>
 	</li>
 </ol>
 <script src="../../main.js"></script>
