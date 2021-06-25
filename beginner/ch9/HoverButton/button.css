@@ -2,6 +2,8 @@
   --bg-color: #151b29;
   --highlight-color: #f1ff5c;
   --primary-color: #ffa260;
+
+  --button-transition-time: 0.25s
 }
 
 body {
@@ -19,10 +21,16 @@ button {
   border: 2px solid var(--primary-color);
   padding: 1em 2em;
   font-size: 1em;
+  transition: color var(--button-transition-time),
+    border-color var(--button-transition-time),
+    box-shadow var(--button-transition-time),
+    transform var(--button-transition-time);
 }
 
 button:hover {
   border: 2px solid var(--highlight-color);
   color: white;
   box-shadow: 0 0.5em 0.5em -0.4em var(--highlight-color);
+  transform: translateY(-0.24em);
+  cursor: pointer;
 }
