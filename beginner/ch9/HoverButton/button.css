@@ -1,0 +1,28 @@
+:root {
+  --bg-blue: #151b29;
+  --highlight-yellow: #f1ff5c;
+  --primary: #ffa260;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-blue);
+}
+
+button {
+  color: var(--primary);
+  background: none;
+  border: 2px solid var(--primary);
+  padding: 1em 2em;
+  font-size: 1em;
+}
+
+button:hover {
+  border: 2px solid var(--highlight-yellow);
+  color: white;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--highlight-yellow);
+}
