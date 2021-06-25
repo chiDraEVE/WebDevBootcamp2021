@@ -1,7 +1,7 @@
 :root {
-  --bg-blue: #151b29;
-  --highlight-yellow: #f1ff5c;
-  --primary: #ffa260;
+  --bg-color: #151b29;
+  --highlight-color: #f1ff5c;
+  --primary-color: #ffa260;
 }
 
 body {
@@ -10,19 +10,19 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--bg-blue);
+  background-color: var(--bg-color);
 }
 
 button {
-  color: var(--primary);
+  color: var(--primary-color);
   background: none;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--primary-color);
   padding: 1em 2em;
   font-size: 1em;
 }
 
 button:hover {
-  border: 2px solid var(--highlight-yellow);
+  border: 2px solid var(--highlight-color);
   color: white;
-  box-shadow: 0 0.5em 0.5em -0.4em var(--highlight-yellow);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--highlight-color);
 }
