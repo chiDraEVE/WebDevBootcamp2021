@@ -23,3 +23,17 @@ h2 {
 a, a:visited {
     color: var(--tertiary-font-color);
 }
+
+.chapter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chapter li {
+    width: 20rem;
+    font-size: 2rem;
+    padding: 1em;
+    margin: 1em;
+
+}
+
