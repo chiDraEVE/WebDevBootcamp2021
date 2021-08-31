@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+	<title>Chapter 16: JavaScript Decision Making</title>
+</head>
+<body>
+<nav>
+	<a href="../../index.html">Home</a> ->
+	<a href="../index.html">Beginner Bootcamp</a>
+</nav>
+<h2>Chapter 16: JavaScript Decision Making</h2>
+<nav>
+	<ul>
+		<li><a href="Conditionals">Conditionals</a></li>
+		<li><a href="Logical_Operators">Logical Operators</a></li>
+		<li><a href="Running_Js_Script">Running JS Script</a></li>
+		<li><a href="Truthy_Falsy">Truthy & Falsy</a></li>
+	</ul>
+</nav>
+
+<h3>Course-Content-Overview</h3>
+<ol start="159">
+	<li>
+		<h4>What Matters in This Section</h4>
+		<p>
+			<a href="Strings_CheatSheet.js">Strings Cheatsheet</a>
+			<br>
+			<a
+					href="https://www.canva.com/design/DAEB57Q-q4c/7Fk-JHCzjRkrvb16zvCFvQ/view?utm_content=DAEB57Q-q4c&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">Slides</a>
+			<br>
+			<a href="WDB+Boolean+Logic.pdf">Slides PDF</a>
+		</p>
+	</li>
+	<li>
+		<h4>Decision Making With Code?</h4>
+		<p>Colt did an example with reddit. Is the user logged in, are there comments,..</p>
+	</li>
+	<li>
+		<h4>Comparison Operators</h4>
+		<p>For teaching: Explain how characters are compared and show unicode-table</p>
+	</li>
+	<li>
+		<h4>Equality: Triple vs. Double Equals</h4>
+		<pre>
+			1 == 1 //true
+			1 == '1' //true
+			null == undefined //true
+			1 == 2 //false
+			0 == false //true
+			2 === '2' //false
+			false === 0 //false
+			10 != '10' //false
+			10 !== '10' //true
+		</pre>
+	</li>
+	<li>
+		<h4>Console, Alert & Prompt</h4>
+		<p>There are also console.warn() and console.error(). Totally forgot about those two. You also don't see prompt
+			() that often. Also forgot about pareInt(). That was a good refresh of JavaSript-Knowledge! I used that in
+			HackerRank a lot.</p>
+	</li>
+	<li>
+		<h4>Running JavaScript From A Script!</h4>
+		<p><a href="Running_Js_Script">Running JS Script</a><br>You don't see variables you didn't console.log(), but
+			you've access to them.<br>
+			Generally you place
+		<code>
+			&lt;script src="app.js"&gt;&lt;/script&gt;
+      </code>
+			at the end of the body, because you want the whole HTML loaded before using JavaScript. Else it wouldn't appear
+		in the DOM and the site loads slower.<br>
+			A modern approach is to use <code>async</code> or <code>defer</code>. I found this StackOverflow answer when I
+			googled why to put the script to the end: <a
+					href="https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup">Where
+				should I put &lt;script&gt; tags in HTML markup?</a>
+		</p>
+	</li>
+	<li>
+		<h4>If Statements</h4>
+		<p>Colt tried to make more sense to if statements by using random numbers instead of pre-given variables in the
+			code or user inputs.</p>
+	</li>
+	<li>
+		<h4>Else if</h4>
+		<p>Colt did an example with day of a week and another example with age and entry fees</p>
+	</li>
+	<li>
+		<h4>Else</h4>
+		<p>Colt uses the example with day of a week and uses else for more than one days of a week. Also corrects the
+			example with the random numbers.</p>
+	</li>
+	<li>
+		<h4>Nesting Conditionals</h4>
+		<p></p>
+	</li>
+	<li>
+		<h4>Truth-y & False-y Values</h4>
+		<p>Falsy is all that, that I would want to be false in an if statement like checking for 0, empty strings, NaN,
+			undefined,...<br>
+			Everything else is truthy.</p>
+	</li>
+	<li>
+		<h4>Logical AND</h4>
+		<p></p>
+	</li>
+	<li>
+		<h4>Logical OR</h4>
+		<p></p>
+	</li>
+	<li>
+		<h4>Logical NOT</h4>
+		<p></p>
+	</li>
+	<li>
+		<h4>The Switch Statement is... A Lot</h4>
+		<p></p>
+	</li>
+</ol>
+<script src="../../main.js"></script>
+</body>
+</html>
