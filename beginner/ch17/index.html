@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+	<title>Chapter 17: JavaScript Arrays</title>
+</head>
+<body>
+<nav>
+	<a href="../../index.html">Home</a> ->
+	<a href="../index.html">Beginner Bootcamp</a>
+</nav>
+<h2>Chapter 17: JavaScript Arrays</h2>
+<nav>
+	<ul>
+
+	</ul>
+</nav>
+
+<h3>Course-Content-Overview</h3>
+<ol start="174">
+	<li>
+		<h4>What Matters in This Section</h4>
+		<p>
+			<a href="array_cheatsheet.js">Arrays Cheatsheet</a>
+			<br>
+			<a
+					href="https://www.canva.com/design/DAECFJDBnCc/rrjPyRVrek4SXKDjxRpx9w/view?utm_content=DAECFJDBnCc&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">Slides</a>
+			<br>
+			<a href="WDB++Arrays.pdf" target="_blank">Slides PDF</a>
+		</p>
+	</li>
+	<li>
+		<h4>Introducing Arrays</h4>
+		<p>Ordered Collection of Values</p>
+	</li>
+	<li>
+		<h4>Array Random Access</h4>
+		<p>Arrays are indexed. I can change individual value in an array with arr[0] = 'newval', but I can't do this
+			with strings.</p>
+	</li>
+	<li>
+		<h4>Push & Pop</h4>
+		<p>Push - add to end, Pop - from the end</p>
+	</li>
+	<li>
+		<h4>Shift & Unshift</h4>
+		<p>Shift - remove from start, Unshift - add to start</p>
+	</li>
+	<li>
+		<h4>Concat, indexOf, includes & reverse</h4>
+		<p>concat - merge arrays</p>
+		<p>includes - look for a value</p>
+		<p>indexOf - just like string.indexOf</p>
+		<p>join - creates a string from an array</p>
+		<p>reverse - reverses an array</p>
+	</li>
+	<li>
+		<h4>Slice & Splice</h4>
+		<p>slice - copies a portion on an array</p>
+		<p>splice - removes/replaces elements</p>
+		<p>sort - sorts an array</p>
+	</li>
+	<li>
+		<h4>Reference Types & Equality Testing</h4>
+		<p>You can't compare arrays with == or ===. You can only check the reference. When you store an array in a new
+			variable it's not a copy, but a reference.</p>
+	</li>
+	<li>
+		<h4>Arrays + Const</h4>
+		<p>An array that's declared as const can't be reassigned, but the content is still mutable.</p>
+	</li>
+	<li>
+		<h4>Multi-Dimensional Arrays</h4>
+		<code>
+			const gameBoard = [['X', 'O', 'X'], ['O', null, 'X'], ['O', 'O', 'X']]<br>
+			gameBoard[1][1]
+		</code>
+	</li>
+</ol>
+<script src="../../main.js"></script>
+</body>
+</html>
