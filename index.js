@@ -1,1 +1,1 @@
-console.log("hello123")
+console.log("Webpack loaded")

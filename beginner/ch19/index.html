@@ -39,52 +39,80 @@
 	</li>
 	<li>
 		<h4>Intro to For Loops</h4>
-		<p></p>
+		<p>I kinda wanted to write the for loop with <code>var</code> for the iterator. It should be <code>let</code>
+			nowadays.
+		</p>
+		<code>for (let i=0; i<6; i++) console.log("Da ba dee da ba daa")</code>
 	</li>
 	<li>
 		<h4>More For Loops Examples</h4>
-		<p></p>
+		<p>Counting down, using steps with substracting 5</p>
 	</li>
 	<li>
 		<h4>The Perils Of Infinite Loops :(</h4>
-		<p></p>
+		<p>Yeah... always check if your loops will determine</p>
 	</li>
 	<li>
 		<h4>Looping Over Arrays</h4>
-		<p></p>
+		<p>You could use a for loop, but most times you want to iterate over all elements and you should use foreach
+			instead</p>
 	</li>
 	<li>
 		<h4>Nested Loops</h4>
-		<p></p>
+		<p>Mind to check if you got the right array length in the inner loop.</p>
 	</li>
 	<li>
 		<h4>Another Loop: The While Loop</h4>
-		<p></p>
+		<p>Watch your iterator/condition! Don't make an infinite loop!</p>
 	</li>
 	<li>
 		<h4>The Break Keyword</h4>
-		<p></p>
+		<p><code>break</code> will end the loop</p>
 	</li>
 	<li>
 		<h4>Writing a Guessing Game</h4>
-		<p></p>
+		<p><a href="https://youtu.be/VG27YwzEFB8" target="_blank">Writing a guessing Game: Bugs and Refactor
+			(=>YouTube)</a></p>
 	</li>
 	<li>
 		<h4>The Lovely For...Of Loop</h4>
-		<p></p>
+		<pre>
+			const numbers = [1,2,3,4,5,6,7,8,9];
+			for (const num of numbers) {
+			  console.log(num*num);
+			}
+		</pre>
 	</li>
 	<li>
 		<h4>Iterating over Objects</h4>
-		<p></p>
+		<pre>
+    const testScores = {
+    keenan: 80,
+    damon: 67,
+    kim: 89,
+    shawn: 91,
+    marlon: 72,
+    dwayne: 77,
+    nadia: 83,
+    elvira: 97,
+    diedre: 81,
+    vonnie: 60
+}
+
+for (let person in testScores) {
+    console.log(`${person} scored ${testScores[person]}`);
+}
+		</pre>
+		<p>You can also iterate through an object converting it to an array and can access key, value or both using
+			<code>Object.keys(testScores), Object.values(testScores), Object.entries(testScores)</code></p>
 	</li>
 	<li>
 		<h4>Todo List Project Intro</h4>
-		<p></p>
+		<p>A todo list prompting every command.</p>
 	</li>
 	<li>
 		<h4>Todo List Project CodeAlong</h4>
-		<p><a href="https://youtu.be/VG27YwzEFB8" target="_blank">Writing a guessing Game: Bugs and Refactor
-			(=>YouTube)</a></p>
+		<p>I really not interested to code along</p>
 	</li>
 </ol>
 <script src="../../main.js"></script>
