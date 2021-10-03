@@ -37,40 +37,50 @@
 	</li>
 	<li>
 		<h4>Function Scope</h4>
-		<p></p>
+		<p>Variables in a function can only be called in the function itself. Be aware, that you could use the same
+			variable name, one in the function and one global. Try to avoid that!</p>
 	</li>
 	<li>
 		<h4>Block Scope</h4>
-		<p></p>
+		<p>A block could be an if-statement. Everything in curly braces is a block. Be aware, that variables defined
+			with <code>var</code> can be accessed anyway. Don't use <code>var</code>!</p>
 	</li>
 	<li>
 		<h4>Lexical Scope</h4>
-		<p></p>
+		<p>Inner functions have access to variables from parent functions</p>
 	</li>
 	<li>
 		<h4>Function Expressions</h4>
-		<p></p>
+		<p>Function stored in a variable</p>
 	</li>
 	<li>
 		<h4>Higher Order Functions</h4>
-		<p></p>
+		<p>Functions that operate on / with ohter functions.<br>They can:</p>
+		<ul>
+			<li>Accept other functions as arguments</li>
+			<li>Return a function</li>
+		</ul>
+		<p><a href="HigherOrderFunctions">Higher Order Functions</a></p>
 	</li>
 	<li>
 		<h4>Returning Functions</h4>
-		<p></p>
+		<p>You can generate a function in a function and return it. You could save generated functions in variables and
+			reuse them all over the place.</p>
 	</li>
 	<li>
 		<h4>Defining Methods</h4>
-		<p></p>
+		<p>All methods are functions, but not all functions are methods. Methods are functions in objects and are called
+		after a dot.<br>You don't need to write <code>function</code> to define a method?!? I didn't knew that.</p>
 	</li>
 	<li>
 		<h4>The Mysterious Keyword 'this'</h4>
-		<p></p>
+		<p>Colt is explaining <code>this</code> only for the use in objects. I hope it's not necessary anymore to use
+			<code>this</code> so extensively any more like it used to be.</p>
+		<blockquote>The value of <b>this</b> depends on the invocation context of the function it is used in.</blockquote>
 	</li>
 	<li>
 		<h4>Using Try/Catch</h4>
-		<p>
-		</p>
+		<p>That's a really good explanation from Colt</p>
 	</li>
 </ol>
 <script src="../../main.js"></script>
