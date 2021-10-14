@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+	<title>Chapter 24: Introducing The World Of The DOM</title>
+</head>
+<body>
+<nav>
+	<a href="../../index.html">Home</a> ->
+	<a href="../index.html">Beginner Bootcamp</a>
+</nav>
+<h2>Chapter 24: Introducing The World Of The DOM</h2>
+<nav>
+	<ul>
+		<li><a href="Manipulating">Manipulating</a></li>
+		<li><a href="Pokemon">Pokemon</a></li>
+		<li><a href="Selecting">Selecting</a></li>
+	</ul>
+</nav>
+
+<h3>Course-Content-Overview</h3>
+<ol start="240">
+	<li>
+		<h4>What Matters in This Section</h4>
+		<p>
+			<a
+					href="https://www.canva.com/design/DAEC74eC_C4/AnBnMzE-z2dayjdMmVmuSg/view?utm_content=DAEC74eC_C4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">Slides</a>
+			<br>
+			<a href="WDB++DOM+Manipulation.pdf" target="_blank">Slides PDF</a>
+		</p>
+	</li>
+	<li>
+		<h4>Introducing the DOM</h4>
+		<p>Colt is explaining DOM on actual websites like Google and Trello</p>
+	</li>
+	<li>
+		<h4>The Document Object</h4>
+		<p>Everything in the Document is an object and they are connected as a tree I know from Datastructures from my
+			computer science study</p>
+	</li>
+	<li>
+		<h4>getElementById</h4>
+		<p>You get the DOM-Object. There should always be only one element with a certain ID. Therefore it's <code>get<b>
+			Element</b>ById</code>
+			and <code>get<b>Element<span style="color: orange">s</span></b>ByClassName</code>
+		</p>
+	</li>
+	<li>
+		<h4>getElementsByTagName & className</h4>
+		<p><code>console.dir</code> gives a information about objects in the console. GetElementsByTagName and
+			getElementsByClassName don't return arrays. It's a iterable collections. Colt uses for/of loop.</p>
+	</li>
+	<li>
+		<h4>querySelector & querySelectorAll</h4>
+		<p>CSS-Style query selector. QuerySelector gives only the first object. QuerySelectorAll gives you collection of
+		matching elements.</p>
+	</li>
+	<li>
+		<h4>innerHTML, textContent, & innerText</h4>
+		<p>textContent gives the content like it's saved in the file. Even hidden content. InnerText will not get you
+			content that's hidden. InnerHTML gives the whole content in HTML obviously.</p>
+	</li>
+	<li>
+		<h4>Attributes</h4>
+		<p>This topic will be more important when handling with data or when using Reacts</p>
+	</li>
+	<li>
+		<h4>Changing Styles</h4>
+		<p>While you look up in the DOM and check for example <code>h1.style.color</code> you will find every possible
+			method setting a style, but it will be empty because it only contains inline styles.<br>
+			You shouldn't use this method for styling. Better you give elements a class.
+		</p>
+	</li>
+	<li>
+		<h4>ClassList</h4>
+		<p>One of the most used things. Ex: <code>h2.classList.{add|remove|contains|toggle}</code></p>
+	</li>
+	<li>
+		<h4>Traversing Parent/Child/Sibling</h4>
+		<p>Just how you would traverse in a tree data structure.
+			<code>parentElement | children | childElement | firstChild | lastChildElement | nextSibling</code><br>
+			Nodes are DOM objects. They are represented as text, mostly whitespace like return character. <code>childre
+			</code> will give an html collection. Elements are HTML elements, that's mostly used.
+		</p>
+	</li>
+	<li>
+		<h4>Append & AppendChild</h4>
+		<p>Create element <code>document.createElement('img')</code> then append on an element. There is also prepend
+			and the option to add an element between elements. <a
+					href="https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement"><code>Element.insertAdjacentElement()</code></a></p>
+	</li>
+	<li>
+		<h4>removeChild & remove</h4>
+		<p>RemoveChild requires to select the parent, then you can remove the child. Nowadays we can use remove and can
+			select the actual element we want to remove</p>
+	</li>
+	<li>
+		<h4>Pokemon Sprites Demo</h4>
+		<p></p>
+	</li>
+</ol>
+<script src="../../main.js"></script>
+</body>
+</html>
