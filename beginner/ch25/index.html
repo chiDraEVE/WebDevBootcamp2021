@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+	<title>Chapter 25: The Missing Piece: DOM Events</title>
+</head>
+<body>
+<nav>
+	<a href="../../index.html">Home</a> ->
+	<a href="../index.html">Beginner Bootcamp</a>
+</nav>
+<h2>Chapter 25: The Missing Piece: DOM Events</h2>
+<nav>
+	<ul>
+		<li><a href="Bubbling">Bubbling</a></li>
+		<li><a href="ChangeAndInputEvents">Change and Input Events</a></li>
+		<li><a href="Delegation">Delegation</a></li>
+		<li><a href="EventBasics">Event Basics</a></li>
+		<li><a href="EventsAndThis">Events and This</a></li>
+		<li><a href="FormEvents">Form Events</a></li>
+		<li><a href="RandomColors">Random Colors</a></li>
+		<li><a href="TheEventObject">The Event Object</a></li>
+		<li><b><a href="ScoreKeeper">Score Keeper</a></b></li>
+	</ul>
+</nav>
+
+<h3>Course-Content-Overview</h3>
+<ol start="254">
+	<li>
+		<h4>What Matters in This Section</h4>
+		<p>
+			<a
+					href="https://www.canva.com/design/DAEC74eC_C4/AnBnMzE-z2dayjdMmVmuSg/view?utm_content=DAEC74eC_C4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">Slides</a>
+			<br>
+			<a href="WDB++DOM+Manipulation.pdf" target="_blank">Slides PDF</a>
+		</p>
+	</li>
+	<li>
+		<h4>Intro to Events</h4>
+		<p>Colt introduces Events by showing examples on a browser game and on trello</p>
+	</li>
+	<li>
+		<h4>Inline Events</h4>
+		<p>There are 3 ways to handle events, but only one preferred one. Inline Events are not.</p>
+	</li>
+	<li>
+		<h4>The Onclick Property</h4>
+		<p>That's a better approach but not optimal.</p>
+	</li>
+	<li>
+		<h4>addEventListener</h4>
+		<p>That's the usual way</p>
+	</li>
+	<li>
+		<h4>Random Color Exercise</h4>
+		<p>For selecting the body you don't need the querySelector. You can access it with <code>document.bodyf</code></p>
+	</li>
+	<li>
+		<h4>Events & The Keyword This</h4>
+		<p>This is referring on the element clicked on</p>
+	</li>
+	<li>
+		<h4>Keyboard Events & Event Objects</h4>
+		<p>Events give you an object. Especially for keyboard events you need to use it to find out, what key was
+			pressed. <br>
+			<b>Hint:</b> Colt is showing, that there's a difference between <code>e.key</code> and <code>e.code</code>. The
+			first is the character depending on the keyboard layout. The latter is the position on the keyboard.
+		</p>
+	</li>
+	<li>
+		<h4>Form Events & PreventDefault</h4>
+		<p>Submitting is also an event that I can handle with an EventListener</p>
+	</li>
+	<li>
+		<h4>Input & Change Events</h4>
+		<p>Listening on change and input to give a list of recommendations for example. Change will only fire if
+			something is changed and the input looses focus. input is firing everytime something happens in the input</p>
+	</li>
+	<li>
+		<h4>Event Bubbling</h4>
+		<p>Event Bubbling is called when nested elements have many event listeners. Every listener is triggered. It's
+			called bubbling because you can imagine bubbles rising in a fish tank. The bubble is triggering the next upper
+			events.<br>
+			<code>e.stopPropagation()</code> will stop this behaviour
+		</p>
+	</li>
+	<li>
+		<h4>Event Delegation</h4>
+		<p>means to give a parent object and event listener. elements created after loading the pages can't be delegated
+		to a listener. So you select the parent for listening and than watch for <code>e.target</code></p>
+	</li>
+	<li>
+		<h4>Score Keeper Pt. 1</h4>
+		<p><a href="ScoreKeeper">Score Keeper</a></p>
+	</li>
+	<li>
+		<h4>Score Keeper Pt. 2</h4>
+		<p></p>
+	</li>
+	<li>
+		<h4>Score Keeper Pt. 3 With Bulma</h4>
+		<p><a href="https://bulma.io/">Bulma</a></p>
+	</li>
+	<li>
+		<h4>Score Keeper Pt. 4 Refactoring</h4>
+		<p></p>
+	</li>
+</ol>
+<script src="../../main.js"></script>
+</body>
+</html>
