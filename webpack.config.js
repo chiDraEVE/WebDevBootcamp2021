@@ -9,7 +9,7 @@ module.exports = {
 	watch: true,
 	devServer: {
 		before: function(app, server) {
-			server._watch(["./**/*.html", "./**/*.css"])
+			server._watch(["./**/*.html", "./**/*.css", "./**/*.js"])
 		},
 		port: 3000,
 		contentBase: path.join(__dirname),

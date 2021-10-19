@@ -1,1 +1,1 @@
-console.log("Webpack loaded")
+import scorekeeper from './beginner/ch25/ScoreKeeper/app'
