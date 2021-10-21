@@ -15,6 +15,7 @@ const p2 = {
 
 const message = document.querySelector('#message')
 const resetButton = document.querySelector('#reset')
+const newGameButton = document.querySelector('#newGame')
 const bestOfGamesSelect = document.querySelector('#bestOfGames')
 const winningScore = 11
 let maxMatches = 5
@@ -25,14 +26,18 @@ let isGameOver = (score1, score2) => {
 	else return Math.abs(score1 - score2) >= 2;
 }
 
+const isMatchOver = (player) => Math.ceil(maxMatches / 2) === player.games
+
 function updateScores(player, opponent) {
-	if (!isGameOver(player.score, opponent.score)) {
+	if (!isGameOver(player.score, opponent.score) && !isMatchOver(player)) {
 		player.score += 1
 		if (isGameOver(player.score, opponent.score)) {
 			player.display.classList.add('has-text-success')
 			opponent.display.classList.add('has-text-danger')
 			player.button.disabled = true
 			opponent.button.disabled = true
+			player.games += 1
+			player.gamesDisplay.textContent = player.games
 		}
 		player.display.textContent = player.score
 		displayTowelBreak(p1.score, p2.score)
@@ -64,6 +69,7 @@ bestOfGamesSelect.addEventListener("change", function () {
 })
 
 resetButton.addEventListener("click", reset)
+newGameButton.addEventListener('click', newGame)
 
 function reset() {
 	for (let p of [p1, p2]) {
@@ -71,5 +77,13 @@ function reset() {
 		p.display.textContent = p.score
 		p.display.classList.remove('has-text-success', 'has-text-danger')
 		p.button.disabled = false
+	}
+}
+
+function newGame() {
+	reset()
+	for (let p of [p1, p2]) {
+		p.games = 0
+		p.gamesDisplay.textContent = p.score
 	}
 }
