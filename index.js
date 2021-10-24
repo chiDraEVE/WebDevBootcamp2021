@@ -1,1 +1,1 @@
-import scorekeeper from './beginner/ch25/ScoreKeeper/app'
+import scorekeeper from './beginner/ScoreKeeper/app'

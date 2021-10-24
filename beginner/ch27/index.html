@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+	<title>Chapter 27: Async JavaScript: Oh Boy!</title>
+</head>
+<body>
+<nav>
+	<a href="../../index.html">Home</a> ->
+	<a href="../index.html">Beginner Bootcamp</a>
+</nav>
+<h2>Chapter 27: Async JavaScript: Oh Boy!</h2>
+<nav>
+	<ul>
+		<li><a href="AsyncFunctions">Async Function</a></li>
+		<li><a href="CallbackHell">Callback Hell</a></li>
+		<li><a href="Callbacks">Callbacks</a></li>
+		<li><a href="Callstack">Call Stack</a></li>
+		<li><a href="CreatingPromises">Creating Promises</a></li>
+		<li><a href="PromisesIntro">Promises Intro</a></li>
+	</ul>
+</nav>
+
+<h3>Course-Content-Overview</h3>
+<ol start="270">
+	<li>
+		<h4>What Matters in This Section</h4>
+		<p>
+			<a
+					href="https://www.canva.com/design/DAEDg1njPt0/TDOoq58UG-FfO7WwpCNJWA/view?utm_content=DAEDg1njPt0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">Slides</a>
+			<br>
+			<a href="WDB+Async+JavaScript.pdf" target="_blank">Slides PDF</a>
+		</p>
+	</li>
+	<li>
+		<h4>The Call Stack</h4>
+		<a
+				href="http://latentflip.com/loupe/?code=ZnVuY3Rpb24gbXVsdGlwbHkoeCx5KSB7CiAgICByZXR1cm4geCAqIHk7Cn0KCmZ1bmN0aW9uIHNxdWFyZSh4KSB7CiAgICByZXR1cm4gbXVsdGlwbHkoeCx4KTsKfQoKZnVuY3Rpb24gaXNSaWdodFRyaWFuZ2xlKGEsYixjKXsKICAgIHJldHVybiBzcXVhcmUoYSkgKyBzcXVhcmUoYikgPT09IHNxdWFyZShjKTsKfQoKaXNSaWdodFRyaWFuZ2xlKDMsNCw1KQ%3D%3D!!!" target="_blank">Loupe IsRightTriangle CallStack</a>
+		<p>It's that exact stack I know from Computer Science. JavaScript is putting where it left, when doing another
+			function. After calling function for function JavaScript always knows where to come back to</p>
+		<p class="hint" style="color: orange">Colt is showing how to use the Debugger in Chrome</p>
+	</li>
+	<li>
+		<h4>WebAPIs & Single Threaded</h4>
+		<a
+				href="http://latentflip.com/loupe/?code=Y29uc29sZS5sb2coIlNlbmRpbmcgcmVxdWVzdCB0byBzZXJ2ZXIhIikKc2V0VGltZW91dChmdW5jdGlvbigpIHsKICAgIGNvbnNvbGUubG9nKCJIZXJlIGlzIHlvdXIgZGF0YSBmcm9tIHRoZSBzZXJ2ZXIuLi4iKQp9LCAzMDAwKQpjb25zb2xlLmxvZygiSSBBTSBBVCBUSEUgRU5EIE9GIFRIRSBGSUxFISIp!!!" target="_blank">Loupe setTimeout Demo</a>
+		<p>Colt is preparing the student for async function and kinda explains how multithreading on a machine work.
+			Although JavaScript is single-threaded, the concept is important to understand</p>
+	</li>
+	<li>
+		<h4>Callback Hell :(</h4>
+		<p>Code gets very nested and messy</p>
+	</li>
+	<li>
+		<h4>Demo: fakeRequest Using Callbacks</h4>
+		<p>A more or less real-world example for a Callback Hell</p>
+	</li>
+	<li>
+		<h4>Demo: fakeRequest Using Promises</h4>
+		<p></p>
+	</li>
+	<li>
+		<h4>The Magic of Promises</h4>
+		<p>If you return promises you don't need to nest the requests, you can chain them together and only have to do
+			one single catch</p>
+	</li>
+	<li>
+		<h4>Creating Our Own Promises</h4>
+		<p>Therefore you need to return a Promise object with tha paramteres resolve and reject</p>
+	</li>
+	<li>
+		<h4>The Async Keyword</h4>
+		<p>Every async function returns a promise.</p>
+	</li>
+	<li>
+		<h4>The Await Keyword</h4>
+		<p>await will stop computation until the promise is resolved</p>
+	</li>
+	<li>
+		<h4>Handling Errors in Async Functions</h4>
+		<p>Use try and catch for this</p>
+	</li>
+</ol>
+<script src="../../main.js"></script>
+</body>
+</html>
