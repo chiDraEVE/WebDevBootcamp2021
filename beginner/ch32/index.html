@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../style.css">
+	<title>Chapter 32: Exploring Modules & The NPM Universe</title>
+</head>
+<body>
+<nav>
+	<a href="../../index.html">Home</a> ->
+	<a href="../index.html">Beginner Bootcamp</a>
+</nav>
+<h2>Chapter 32: Exploring Modules & The NPM Universe</h2>
+<nav>
+	<ul>
+		<li><a href="Artster">Artster</a></li>
+		<li><a href="Jokester">Jokester</a></li>
+		<li><a href="LangGuessr">Language Guesser</a></li>
+		<li><a href="shelter">Shelter</a></li>
+	</ul>
+</nav>
+
+<h3>Course-Content-Overview</h3>
+<ol start="320">
+	<li>
+		<h4>What Matters in This Section</h4>
+<!--		<p>-->
+<!--			<a-->
+<!--					href="https://www.canva.com/design/DAEEJ5vmCOs/-MdF0FsNq0tKab3baCY6eg/view?utm_content=DAEEJ5vmCOs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">Slides</a>-->
+<!--			<br>-->
+<!--			<a href="WDB+Intro+to+Node.pdf" target="_blank">Slides PDF</a>-->
+<!--		</p>-->
+	</li>
+	<li>
+		<h4>Working with module exports</h4>
+		<p>Don't forget the dot when require your own modules and don't forget to <code>module.exports</code> the module
+		you need. Or just <code>exports</code> without <code>module</code></p>
+	</li>
+	<li>
+		<h4>Requiring a directory</h4>
+		<p>If you have an <code>index.js</code> in that directory, you can just
+		type the folder name and node automatically looks for this file. This is commonly used in most libraries</p>
+	</li>
+	<li>
+		<h4>Introducing NPM</h4>
+	</li>
+	<li>
+		<h4>Installing Packages - Jokes & Rainbow</h4>
+		<p><a href="https://www.npmjs.com/package/give-me-a-joke">give-me-a-joke</a><br><a
+				href="https://www.npmjs.com/package/colors">colors.js</a></p>
+		<p><code>package-lock.json</code> contains all the dependencies and contains information what there's in the
+			node modules directory</p>
+	</li>
+	<li>
+		<h4>Adding Global Packages</h4>
+		<p><a href="https://www.npmjs.com/package/cowsay">cowsay</a></p>
+		<p>There's this concern about installing packages globally because of different versions. When you first install
+		node and npm you have to modify permissions before you can do this. There's the first time i saw
+			<code>npm link</code></p>
+	</li>
+	<li>
+		<h4>The All/Important <code>package.json</code></h4>
+		<p>Not necessary but you will want it. It contains metadata. <code>npm init</code> is the command to create it
+			via prompting. Then you install the packages and npm keeps track of dependencies and version, so you can give
+			the project to someone else. Normally, you don't send the node_modules folder. Everything is going to be
+			downloaded and installed that's in the <code>package.json</code> file.</p>
+	</li>
+	<li>
+		<h4>Installing all dependencies for a project</h4>
+		<p><a href="https://github.com/dkhd/node-group-chat">node-group-chat</a></p>
+		<p>Well, you just type <code>npm i</code> without arguments, if you have the package.json file.</p>
+	</li>
+	<li>
+		<h4>Language Guesser Challenge</h4>
+		<p><a href="https://github.com/wooorm/franc">franc</a><br><a
+				href="https://github.com/adlawson/nodejs-langs">nodejs-langs
+		</a></p>
+		<p>franc is a tool, that can guess the language. But it returns an ISO language code, so you need another
+			library. </p>
+	</li>
+</ol>
+<script src="../../main.js"></script>
+</body>
+</html>
