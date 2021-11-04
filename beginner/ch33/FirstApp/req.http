@@ -7,6 +7,14 @@ GET http://localhost:8080/cats
 Accept: application/json
 
 ###
+GET http://localhost:8080/search?q=dog&color=red
+Accept: application/json
+
+###
+GET http://localhost:8080/search?color=red
+Accept: application/json
+
+###
 POST http://localhost:8080/cats
 Content-Type: application/json
 
