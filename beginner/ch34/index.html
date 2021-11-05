@@ -7,6 +7,15 @@
 	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
 	<link rel="stylesheet" href="../style.css">
 	<title>Chapter 34: Creating Dynamic HTML with Templating</title>
+	<style>
+		.ejs-tags code {
+        padding: 2px 4px;
+        font-size: 90%;
+        color: #dca9b1;
+        background-color: rgb(33, 28, 30);
+        border-radius: 4px;
+		}
+	</style>
 </head>
 <body>
 <nav>
@@ -46,43 +55,99 @@
 	</li>
 	<li>
 		<h4>Setting the views directory</h4>
-		<p></p>
+		<p>If you want to work from different directories, you should change the view directory. Node will find the
+			views, if you start it in the project's root folder. Otherwise you need to give the <code>__dirname</code> like
+			<code>app.set('views', path.join(__dirname, '/views'))
+			</code>
+		</p>
 	</li>
 	<li>
 		<h4>EJS Interpolation Syntax</h4>
-		<p></p>
+		<ul class="ejs-tags">
+			<li><code>&lt;%</code> 'Scriptlet' tag, for control-flow, no output</li>
+			<li><code>&lt;%_</code> ‘Whitespace Slurping’ Scriptlet tag, strips all whitespace before it</li>
+			<li><code>&lt;%=</code> Outputs the value into the template (HTML escaped)</li>
+			<li><code>&lt;%-</code> Outputs the unescaped value into the template</li>
+			<li><code>&lt;%#</code> Comment tag, no execution, no output</li>
+			<li><code>&lt;%%</code> Outputs a literal '&lt;%'</li>
+			<li><code>%&gt;</code> Plain ending tag</li>
+			<li><code>-%&gt;</code> Trim-mode ('newline slurp') tag, trims following newline</li>
+			<li><code>_%&gt;</code> ‘Whitespace Slurping’ ending tag, removes all whitespace after it</li>
+		</ul>
 	</li>
 	<li>
 		<h4>Passing Data to Templates</h4>
-		<p></p>
+		<code>res.render('random', { num })</code>
 	</li>
 	<li>
 		<h4>Subreddit Template Demo</h4>
-		<p></p>
+		<pre>
+app.get('/r/:subreddit', (req, res) => {
+    const { subreddit } = req.params;
+})
+		</pre>
 	</li>
 	<li>
 		<h4>Conditionals in EJS</h4>
-		<p></p>
+		<pre>
+<h1>Your random number is: <%= num %></h1>
+    <% if(num % 2 === 0){ %>
+    <h2>That is an even number!</h2>
+    <% } else { %>
+    <h2>That is an odd number!</h2>
+    <% } %>
+    <p>Here's an alternate way of doing it:</p>
+    <h3>That number is: <%= num%2===0 ? 'EVEN' : 'ODD' %></h3>
+		</pre>
 	</li>
 	<li>
 		<h4>Lopps in EJS</h4>
-		<p></p>
+		<pre>
+<% for(let cat of cats) { %>
+	&lt;li&gt;<%= cat %>&lt;/li&gt;
+<% } %>
+		</pre>
 	</li>
 	<li>
 		<h4>A more complex Subreddit Demo</h4>
-		<p></p>
+		<pre>
+app.get('/r/:subreddit', (req, res) => {
+    const { subreddit } = req.params;
+    const data = redditData[subreddit];
+    if (data) {
+        res.render('subreddit', { ...data });
+    } else {
+        res.render('notfound', { subreddit })
+    }
+})
+		</pre>
+		<ul>
+			<li><a href="http://localhost:8080/r/soccer">Subreddit: Soccer</a></li>
+			<li><a href="http://localhost:8080/r/chickens">Subreddit: Chickens</a></li>
+			<li><a href="http://localhost:8080/r/mightyharvest">Subreddit: MightyHarvest</a></li>
+		</ul>
 	</li>
 	<li>
 		<h4>Serving Static Assets in Express</h4>
-		<p></p>
+		<p>Create an directory called <em>pulbic</em> and then use <code>app.use(express.static(__dirname,
+			'public')</code>. Then
+			you just put in your template like this: <code>&lt;link rel="stylesheet" href="app.css"&gt;</code>. You don't
+			have to give the path to the public folder</p>
 	</li>
 	<li>
 		<h4>bootstrap + Express</h4>
-		<p></p>
+		<p>The bootstrap example is a copy of <em>Templating Demo</em>. So you need to stop the templating Demo and
+			start the server in the Bootstrap_Demo folder, changed the port to 8080, and I added the nodemon dependency. I
+			did copy the npm scripts into
+			the solution code, so I don't
+		need to use the terminal.</p>
 	</li>
 	<li>
 		<h4>EJS & Partials</h4>
-		<p></p>
+		<p>That means creating sub-templates like for header, footer,...<br>
+		<code><%- include('partials/head')%>
+		</code>
+		</p>
 	</li>
 </ol>
 <script src="../../main.js"></script>
